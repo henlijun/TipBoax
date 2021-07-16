@@ -1,7 +1,8 @@
 package com.lj.tipboax;
 
 import android.app.Application;
-import android.widget.Toast;
+
+import com.lj.toastlibrary.LToast;
 
 /**
  * @ProjectName: TipBoax
@@ -20,6 +21,7 @@ public class MainApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Toast.makeText(this,"haha",Toast.LENGTH_LONG).show();
+        LToast.init(this);
+        LToast.show("jeoijofweaofejo");
     }
 }

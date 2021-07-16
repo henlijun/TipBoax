@@ -29,7 +29,7 @@ public class LToast {
         if(TextUtils.isEmpty(text)){
            return;
         }
-        if(context == null)
+        if(context != null)
             Toast.makeText(context,text,Toast.LENGTH_SHORT).show();
     }
 }
